@@ -1,16 +1,20 @@
+<script setup>
+import NavigationBar from './components/NavigationBar.vue';
+import FooterBar from './components/FooterBar.vue';
+</script>
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <header>
+    <NavigationBar />
+  </header>
+  <div class="main">
+    <router-view />
+  </div>
+  <FooterBar />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
 }
 </script>
 
